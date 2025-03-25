@@ -1,12 +1,7 @@
 Package: ecomdash
 Title: Shiny Ecommerce App
 Version: 0.0.0.9000
-Authors@R: c(
-    person("Lars", "Abeling", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID")),
-    person("Lars Abeling", role = "ctb")
-  )
-Description: Enables exploration of Ecommerce data.
+Authors@R: person("Lars", "Abeling", email = "first.last@example.com", role = c("aut", "cre"), comment = c(ORCID = "YOUR-ORCID-ID"))
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
