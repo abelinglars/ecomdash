@@ -1,0 +1,44 @@
+options(shiny.maxRequestSize = 50 * 1024 ^ 2)
+
+server <- function(
+  input,
+  output,
+  session
+) {
+
+
+  thematic_shiny()
+
+  #### MAIN DATA ####
+  dat <- reactive({
+    req(input$file_input)
+    load_data(
+      input$file_input$datapath
+    )
+  })
+
+  #### SIDEBAR ####
+  observe(
+    updateDateRangeInput(
+      inputId = "trend_date_range",
+      start = min(dat()[["date"]]),
+      end = max(dat()[["date"]])
+    )
+  ) |>
+  bindEvent(
+    dat(),
+    input$reset_range
+  )
+
+  #### ANALYTICS ####
+  shop_analytics_server("shop_analytics", dat)
+  customer_analytics_server("customer_analytics", dat)
+  product_analytics_server("product_analytics", dat)
+
+  #### RAW DATA PANEL ####
+  output$main_data <- DT::renderDT({
+    req(input$file_input)
+    dat()
+  })
+
+}
