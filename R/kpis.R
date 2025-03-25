@@ -10,7 +10,7 @@ calculate_market_share_by_country <- function(x) {
 
   x[,
     .(
-      percent_sales = sum(sales) / sum(xx[["sales"]])
+      percent_sales = sum(sales) / sum(x[["sales"]])
     ),
     by = "country"
   ][
@@ -103,7 +103,8 @@ bought_last <- function(x) {
 
   x[
     date == max(date),
-    .(date = max(date),
+    .(
+      date = max(date),
       invoice_no = invoice_no,
       description = description,
       items = stock_code
