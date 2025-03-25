@@ -33,18 +33,18 @@ testing and documentation ensuring maintainability, scalability, and ease of use
 To run the Shiny app locally, follow these steps:
 
 1. **Clone the repository**:
-   ```sh
-   git clone https://github.com/abelinglars/ecomdash.git
-   cd ecomdash
-   ```
+```sh
+git clone https://github.com/abelinglars/ecomdash.git
+cd ecomdash
+```
 2. **Install dependencies** (if not already installed):
-   ```r
-  renv::restore()
-   ```
+```r
+renv::restore()
+```
 3. **Run the app**:
-   ```r
-  start_app()
-   ```
+```r
+start_app()
+```
 
 If deployed online, access the live demo here: **[Live Demo](https://larsabeling.shinyapps.io/ecomdash)**
 
