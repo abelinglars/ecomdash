@@ -17,4 +17,5 @@ Imports:
     shiny,
     stringr,
     thematic
-URL: https://abelinglars.github.io/ecomdash/
+URL: https://github.com/abelinglars/ecomdash, https://abelinglars.github.io/ecomdash/
+BugReports: https://github.com/abelinglars/ecomdash/issues
