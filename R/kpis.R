@@ -26,7 +26,6 @@
 #' @param x A data.table following the structure defined in the
 #' "E-commerce Data Table Structure" section.
 #' @return A data.table with the market share percentage per country.
-#' @import data.table
 #' @export
 calculate_market_share_by_country <- function(x) {
 
