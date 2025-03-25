@@ -15,6 +15,8 @@ such as organizing code in a R packge structure. This simplifies development by
 standardising code structure and providing tooling around dependency management,
 testing and documentation ensuring maintainability, scalability, and ease of use.
 
+Access the live demo here: **[Live Demo](https://larsabeling.shinyapps.io/ecomdash)**
+
 ## Features
 - **Interactive Data Filtering**: Filter sales data by date range, product category, customer segment, and more.
 - **Trend Analysis**: Visualize sales performance over time and identify seasonal trends.
@@ -45,8 +47,6 @@ renv::restore()
 ```r
 start_app()
 ```
-
-If deployed online, access the live demo here: **[Live Demo](https://larsabeling.shinyapps.io/ecomdash)**
 
 ## Dataset
 - The dataset contains historical transaction data from a UK-based online retailer.
