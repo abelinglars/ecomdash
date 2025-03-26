@@ -1,3 +1,5 @@
+^renv$
+^renv\.lock$
 ^ecomdash\.Rproj$
 ^\.Rproj\.user$
 ^\.Renviron$
