@@ -11,10 +11,15 @@ server <- function(
 
   #### MAIN DATA ####
   dat <- reactive({
-    req(input$file_input)
-    load_data(
-      input$file_input$datapath
-    )
+
+    # trying out automatic load
+    file_path <- "ecomData.csv"
+    load_data(file_path)
+    # req(input$file_input)
+    # load_data(
+    #   input$file_input$datapath
+    # )
+
   })
 
   #### SIDEBAR ####
