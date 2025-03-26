@@ -2,6 +2,7 @@
 #'
 #' The functions in this package operate on a `data.table` containing
 #' e-commerce transaction data.
+#' @format A data .table with roughly 300.000 observations of unique invoice items.
 #' The table must have the following columns:
 #'
 #' - `invoice_no` (integer): Invoice number
@@ -17,6 +18,9 @@
 #' - `month` (integer): Month of transaction
 #' - `weekday` (integer): Weekday of transaction
 #' - `hour` (integer): Hour of transaction
+#' @name Ecommerce-Data
+#' @source {https://archive.ics.uci.edu/ml/datasets/online+retail}
+NULL
 
 #' Calculate Market Share by Country
 #'
