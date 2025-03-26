@@ -41,6 +41,7 @@ calculate_market_share_by_country <- function(x) {
     .(percent_sales = sum(percent_sales) * 100),
     by = "country"
   ]
+
 }
 
 #' Calculate Total Revenue
