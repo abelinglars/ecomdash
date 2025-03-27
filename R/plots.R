@@ -12,7 +12,6 @@ trend_analysis <- function(x, date_range = NULL, col) {
     list(summation = sum(col)),
     by = "date",
     env = list(
-      date_range = "date_range",
       col = col
     )
   ] ->
