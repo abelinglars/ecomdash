@@ -23,17 +23,6 @@ server <- function(
   })
 
   #### SIDEBAR ####
-  observe(
-    updateDateRangeInput(
-      inputId = "trend_date_range",
-      start = min(dat()[["date"]]),
-      end = max(dat()[["date"]])
-    )
-  ) |>
-  bindEvent(
-    dat(),
-    input$reset_range
-  )
 
   #### ANALYTICS ####
   shop_analytics_server("shop_analytics", dat)

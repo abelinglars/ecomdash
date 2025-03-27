@@ -5,16 +5,7 @@ library(ggplot2)
 
 sidebar_ui <- sidebar(
   fileInput("file_input", "Upload a csv file."),
-  hr(),
-  dateRangeInput(
-    "trend_date_range",
-    "Select a date range."
-  ),
-  actionButton(
-    "reset_range",
-    "Reset",
-    width = "160px"
-  )
+  hr()
 )
 
 ui <- page_navbar(
