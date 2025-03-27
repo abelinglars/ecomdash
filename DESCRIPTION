@@ -1,4 +1,5 @@
 Package: ecomdash
+Description: Dashboard for UK Ecommerce retailer.
 Title: Shiny Ecommerce App
 Version: 0.0.0.9000
 Authors@R: person("Lars", "Abeling", email = "first.last@example.com", role = c("aut", "cre"), comment = c(ORCID = "YOUR-ORCID-ID"))
