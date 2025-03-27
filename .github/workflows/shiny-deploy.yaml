@@ -14,6 +14,10 @@ jobs:
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
+      - name: Install textshaping dependencies
+        run: sudo apt install libharfbuzz-dev libfribidi-dev
+        shell: bash
+
       - uses: actions/checkout@v4
 
       - uses: r-lib/actions/setup-pandoc@v2
@@ -28,10 +32,6 @@ jobs:
       - name: Install rsconnect
         run: install.packages("rsconnect")
         shell: Rscript {0}
-
-      - name: Install textshaping dependencies
-        run: sudo apt install libharfbuzz-dev libfribidi-dev
-        shell: bash
 
       - name: Authorize and deploy app
         env:
