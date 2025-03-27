@@ -64,6 +64,6 @@ start_app()
 
 ## Insights & Use Cases
 This dashboard helps:
-- Identify top-selling products and seasonal trends.
-- Understand customer purchasing patterns.
-- Detect potential market opportunities by analyzing country-wise sales.
+- Identify top-selling products and seasonal trends
+- Understand customer purchasing patterns
+- Detect potential market opportunities by analyzing country-wise sales

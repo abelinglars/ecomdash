@@ -2,7 +2,7 @@
 % Please edit documentation in R/kpis.R
 \name{calculate_market_share_by_country}
 \alias{calculate_market_share_by_country}
-\title{E-commerce Data Table Structure}
+\title{Calculate Market Share by Country}
 \usage{
 calculate_market_share_by_country(x)
 }
@@ -14,28 +14,6 @@ calculate_market_share_by_country(x)
 A data.table with the market share percentage per country.
 }
 \description{
-The functions in this package operate on a \code{data.table} containing
-e-commerce transaction data.
-The table must have the following columns:
-}
-\details{
-\itemize{
-\item \code{invoice_no} (integer): Invoice number
-\item \code{stock_code} (character): Product stock code
-\item \code{description} (character): Product description
-\item \code{quantity} (integer): Quantity sold
-\item \code{unit_price} (numeric): Price per unit
-\item \code{customer_id} (integer): Customer ID
-\item \code{country} (character): Country of purchase
-\item \code{sales} (numeric): Total sales amount
-\item \code{date} (numeric): Date of transaction
-\item \code{year} (integer): Year of transaction
-\item \code{month} (integer): Month of transaction
-\item \code{weekday} (integer): Weekday of transaction
-\item \code{hour} (integer): Hour of transaction
-Calculate Market Share by Country
-}
-
 This function calculates the percentage of total sales per country.
 Countries with less than 0.9\% of total sales are grouped under "other".
 }
