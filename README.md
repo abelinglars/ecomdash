@@ -1,24 +1,25 @@
 # Shiny E-commerce Dashboard
 
+<!-- <img src="https://raw.githubusercontent.com/Rdatatable/data.table/master/.graphics/logo.png"> -->
+<!-- <img src="https://github.com/rstudio/shiny/blob/main/man/figures/logo.png"> -->
+<!-- <img src="https://github.com/tidyverse/ggplot2/blob/main/man/figures/logo.png"> -->
+
 ## Overview
-This project is an interactive **Shiny** app that allows users to explore sales 
-and customer trends for a **UK-based eCommerce store**.
-It provides insights into key business metrics by leveraging data visualization 
+This project contains an interactive **[Shiny](https://github.com/rstudio/shiny)** app that allows users to explore sales trends over time,
+dig into customer data and find best-selling products for a **UK-based eCommerce store**.
+It provides insights into key **business metrics** by leveraging data visualization 
 and filtering capabilities.
 
-The app is a portfolio project showcasing 
-**data analytics, dashboard development, and R programming skills**.
-It enables users to analyze sales trends, customer behavior,
-and product performance dynamically. Additionally,
-the app was developed following **software engineering best practices**,
-such as organizing code in a R packge structure. This simplifies development by
+The app was developed following **software engineering best practices**,
+such as organizing code in a R package structure and using CICD. This simplifies development by
 standardising code structure and providing tooling around dependency management,
-testing and documentation ensuring maintainability, scalability, and ease of use.
+automatic testing and generation of documentation ensuring maintainability, scalability, and ease of use.
 
 Access the live demo here: **[Live Demo](https://larsabeling.shinyapps.io/ecomdash)**
+Or read the documentation here: **[Documentation](https://larsabeling.github.io/ecomdash)**
 
 ## Features
-- **Interactive Data Filtering**: Filter sales data by date range, product category, customer segment, and more.
+- **Interactive Data Filtering**: Filter sales data by date range, customer, and country.
 - **Trend Analysis**: Visualize sales performance over time and identify seasonal trends.
 - **Customer Insights**: Explore repeat customers, order frequency, and segmentation.
 - **Product Performance Tracking**: Identify best-selling and underperforming products.
