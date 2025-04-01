@@ -16,7 +16,10 @@ standardising code structure and providing tooling around dependency management,
 automatic testing and generation of documentation ensuring maintainability, scalability, and ease of use.
 
 Access the live demo here: **[Live Demo](https://larsabeling.shinyapps.io/ecomdash)**
+
 Or read the documentation here: **[Documentation](https://larsabeling.github.io/ecomdash)**
+
+![](assets/app_showcase.gif)
 
 ## Features
 - **Interactive Data Filtering**: Filter sales data by date range, customer, and country.
